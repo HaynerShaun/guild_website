@@ -108,7 +108,8 @@ const commands = [
   'Adonis/Commands/Migration:Reset',
   'Adonis/Commands/DB:Seed',
   'Adonis/Commands/Migration:Status',
-  'Adonis/Commands/Key:Generate'
+  'Adonis/Commands/Key:Generate',
+  'Adonis/Commands/Auth:Setup'
 ]
 
 module.exports = { providers, aceProviders, aliases, commands }

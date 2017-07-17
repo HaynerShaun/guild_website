@@ -17,4 +17,11 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.get('/', 'UsersController.index')
+Route.get('login', 'UsersController.index')
+Route.get('profile', 'UsersController.profile')
+Route.get('register', 'UsersController.register')
+Route.get('home', 'PostsController.index')
+
+Route.post('register','UsersController.create')
+Route.post('login','UsersController.login')
